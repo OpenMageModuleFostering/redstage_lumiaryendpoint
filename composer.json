@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Redstage_LumiaryEndpoint",
+    "type": "magento-module",
+    "license": "Massachusetts-Institute-of-Technology-License-(MITL)",
+    "homepage": "",
+    "description": "Lumiary brings a retailer's customer data into one platform and powers intelligent segmentation for marketers.",
+    "authors": [
+    {
+        "name": "Carrington Williams",
+        "email": "cw@lumiary.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

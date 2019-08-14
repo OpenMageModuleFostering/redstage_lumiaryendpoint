@@ -1,0 +1,18 @@
+<input type="text" class="input-text" readonly="readonly" value="<?php echo $this->getToken() ?>" id="lumiaryendpoint_core_token" name="groups[core][fields][token][value]" />
+<script type="text/javascript">
+    //<![CDATA[
+    function check() {
+
+        new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+            method:     'get',
+            onSuccess: function(transport){
+                if (transport.responseText){
+                    $('lumiaryendpoint_core_token').value = transport.responseText;
+                }
+            }
+        });
+    }
+    //]]>
+</script>
+<br /><br />
+<?php echo $this->getButtonHtml() ?>
